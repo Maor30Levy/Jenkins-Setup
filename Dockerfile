@@ -21,7 +21,7 @@ RUN apt-get update && \
 
 RUN apt-get -y install sudo
 
-RUN sudo chown 1000:1000 -R /var/
+RUN chown 1000 -R /var
 
 # COmpose
 

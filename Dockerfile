@@ -23,7 +23,7 @@ RUN apt-get -y install sudo
 
 RUN ls /var/
 
-RUN sudo chown 1000:1000 -R /var/
+RUN sudo chown 1000:1000 -R $PWD/jenkins_home
 
 # COmpose
 

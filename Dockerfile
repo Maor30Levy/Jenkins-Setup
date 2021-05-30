@@ -21,6 +21,8 @@ RUN apt-get update && \
 
 RUN apt-get -y install sudo
 
+RUN ls /home/
+
 RUN sudo chown 1000:1000 -R /home/jenkins_home/
 
 # COmpose

@@ -21,10 +21,7 @@ RUN apt-get update && \
 
 RUN apt-get -y install sudo
 
-RUN sudo chown 1000:1000 -R /opt/ &&
-     sudo chown 1000:1000 -R /var/ &&
-     sudo chown 1000:1000 -R /home/ &&
-     ls
+RUN sudo chown 1000:1000 -R /opt/jenkins/
 
 # COmpose
 

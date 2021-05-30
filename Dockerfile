@@ -18,7 +18,9 @@ add-apt-repository \
    stable" && \
 apt-get update && \
 apt-get -y install docker-ce \
-apt-get -y install sudo
+
+RUN apt-get update && \
+      apt-get -y install sudo
 
 RUN sudo chown -R 1000:1000 /opt/jenkins
 

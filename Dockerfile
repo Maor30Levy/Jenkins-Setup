@@ -24,6 +24,8 @@ RUN apt-get -y install sudo
 RUN sudo chown -R 1000:1000 /opt/
 RUN sudo chown -R 1000:1000 /var/
 
+RUN ls ./opt/
+
 # COmpose
 
 RUN curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose

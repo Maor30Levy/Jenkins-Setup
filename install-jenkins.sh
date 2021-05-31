@@ -1,4 +1,4 @@
-#!/bin/bash/
+#/bin/bash/
 docker network create jenkins
 ./dockerDIND.sh
 docker build -t myjenkins-blueocean:1.1 .

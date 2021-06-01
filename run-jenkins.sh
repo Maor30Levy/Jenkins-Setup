@@ -1,6 +1,6 @@
 #/bin/bash/
 docker run \
-  --name jenkins-blueocean \
+  --name jenkins-server \
   --rm \
   --detach \
   --network jenkins \
@@ -11,4 +11,4 @@ docker run \
   --publish 50000:50000 \
   --volume jenkins-data:/var/jenkins_home \
   --volume jenkins-docker-certs:/certs/client:ro \
-  myjenkins-blueocean:1.1
+  jenkins-server:latest

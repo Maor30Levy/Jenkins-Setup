@@ -1,6 +1,6 @@
 #/bin/bash/
 docker network create jenkins
 ./dockerDIND.sh
-docker build -t myjenkins-blueocean:1.1 .
+docker build -t jenkins-server:latest .
 ./run-jenkins.sh
-docker logs jenkins-blueocean
+docker logs jenkins-server
